@@ -37,7 +37,7 @@ A 3-page Power BI dashboard (Executive Summary · Supply Chain Operations · Ris
 | Page | What it shows |
 |---|---|
 | **Executive Summary** | Revenue, profit, margin and order KPIs; revenue/margin trend by month; revenue by segment; product scatter matrix (revenue vs. margin by category); top products by margin; global sales map |
-| **Supply Chain Operations** | OTD %, actual vs. scheduled days, delay variance; delivery status breakdown; delivery status mix by shipping mode; OTD by region |
+| **Supply Chain Operations** | OTD %, actual vs. scheduled days, delay variance; delivery status breakdown; delivery status mix by shipping mode; OTD for the 10 worst-performing regions (all 23 regions are ranked in `delivery_performance_analysis.sql`) |
 | **Risk & Insight** | Fraud rate, cancellation rate, potential loss, unprofitable order %; fraud rate by market; order status funnel; unprofitable order % by category; potential loss by category |
 
 Pages are linked by navigation buttons; selecting a shipping mode, region or category cross-filters every KPI on the page.
@@ -100,7 +100,7 @@ Pages are linked by navigation buttons; selecting a shipping mode, region or cat
 1. Download `DataCoSupplyChainDataset.csv` from Kaggle (link below).
 2. Import it into SQL Server as `dbo.DataCoSupplyChainDataset` in a database named `DataCo_SupplyChain`.
 3. Run the scripts in `sql_queries/`.
-4. Open `supplychain_analysis.pbix` and point the source at your server (Power Query → Data source settings).
+4. Open `supplychain_analysis.pbix` in Power BI Desktop and point the source at your server (Home → Transform data → Data source settings).
 
 ## Dataset
 - **Source:** [DataCo Smart Supply Chain for Big Data Analysis](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis) (Kaggle); original on [Mendeley Data](https://data.mendeley.com/datasets/8gx2fvg2k6/5), by Fabian Constante, Fernando Silva and António Pereira (CC BY 4.0).
